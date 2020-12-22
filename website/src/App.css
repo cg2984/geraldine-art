@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
 .app{
   max-width:1080px;
-  margin:0 auto;
+  margin:2% auto;
+  background-color:#E6EFEC;
 }
 
 footer{
@@ -20,9 +24,18 @@ li{
 }
 
 a{
+  font-family: 'Libre Baskerville', serif;
   text-decoration: none;
+  color:#2C2627;
 }
 
 a:hover{
-  border-bottom:1px solid black;
+  border-bottom:1px solid #2C2627;
+  color:#2C2627;
+}
+
+h1{
+  font-family: 'Libre Baskerville', serif;
+  color:#2C2627;
+  font-family: 'Homemade Apple', cursive;
 }

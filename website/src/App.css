@@ -1,0 +1,23 @@
+footer{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+ul{
+  display:flex;
+  flex-direction:row;
+  list-style: none;
+}
+
+li{
+  margin:10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  border-bottom:1px solid black;
+}

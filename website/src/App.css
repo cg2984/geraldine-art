@@ -1,13 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
-.app{
-  max-width:1080px;
-  margin:2% auto;
-  background-color:#E6EFEC;
+@keyframes hover{
+  from{
+    border-bottom:1px solid #edf5f2;
+  }
+  to{
+    border-bottom:1px solid #3C7A89;
+  }
 }
 
-footer{
+.app{
+  max-width:1080px;
+  margin:0 auto;
+  background-color:#edf5f2;
+}
+
+.about{
+  margin:50px auto;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+.about p{
+  max-width:720px;
+}
+
+nav{
   display:flex;
   flex-direction:row;
   justify-content:space-between;
@@ -17,25 +39,48 @@ ul{
   display:flex;
   flex-direction:row;
   list-style: none;
+  align-items:center;
+  justify-items:space-between;
 }
 
 li{
-  margin:10px;
+  margin:0 0 0 15px;
 }
 
 a{
   font-family: 'Libre Baskerville', serif;
   text-decoration: none;
-  color:#2C2627;
+  color:#3C7A89;
 }
 
 a:hover{
-  border-bottom:1px solid #2C2627;
-  color:#2C2627;
+  animation-name: hover;
+  animation-duration:1s;
+  animation-fill-mode:forward;
 }
 
+.child{
+  width:1000px;
+  height:1000px; 
+  background-color:#e6b52e; 
+  margin:10px; 
+  background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/d9/Collage_of_Nine_Dogs.jpg);
+}
 h1{
   font-family: 'Libre Baskerville', serif;
   color:#2C2627;
   font-family: 'Homemade Apple', cursive;
+}
+
+h2{
+  font-family: 'Libre Baskerville', serif;
+  color:#2C2627;
+  font-size:24px;
+}
+
+p{
+  font-family: 'Libre Baskerville', serif;
+  color:#2C2627;
+  font-size:18px;
+  line-height:1.5em;
 }

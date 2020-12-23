@@ -1,14 +1,14 @@
 import React from "react";
-function Footer() {
+function Navigation() {
   return (
-  	<footer>
+  	<nav>
     	<h1>Geraldine Pinzon</h1>
     	<ul>
       		<li><a href="https://instagram.com" target="_blank" rel="noopener">instagram</a></li>
-      		<li><a href="/about" target="_blank" rel="noopener">about</a></li>
+      		<li><a href="#about">about</a></li>
     	</ul>
-  	</footer>
+  	</nav>
   );
 }
 
-export default Footer;
+export default Navigation;

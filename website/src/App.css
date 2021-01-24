@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @keyframes hover{
   from{
@@ -11,9 +13,12 @@
 }
 
 .app{
-  max-width:1080px;
   margin:0 auto;
-  background-color:#edf5f2;
+  background-color:#fcffff;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
 
 .about{
@@ -29,28 +34,11 @@
   max-width:720px;
 }
 
-nav{
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-}
-
-ul{
-  display:flex;
-  flex-direction:row;
-  list-style: none;
-  align-items:center;
-  justify-items:space-between;
-}
-
-li{
-  margin:0 0 0 15px;
-}
-
 a{
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Special Elite', cursive;
   text-decoration: none;
   color:#3C7A89;
+  font-size:15px;
 }
 
 a:hover{
@@ -59,28 +47,86 @@ a:hover{
   animation-fill-mode:forward;
 }
 
+button{
+  background-color:white;
+  border:none;
+  margin:0 50%;
+  padding:10px 20px;
+  font-family: 'Special Elite', cursive;
+}
+
+button:hover{
+  cursor:pointer;
+  background-color:#dbdbdb;
+}
+
+button:focus{
+  outline:none;
+}
+
+
 .child{
   width:1000px;
   height:1000px; 
-  background-color:#e6b52e; 
   margin:10px; 
-  background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/d9/Collage_of_Nine_Dogs.jpg);
+  cursor: pointer;
 }
+
+.gallery_wrapper div{
+  height:100%;
+  margin:25px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-content:center;
+}
+
+.gallery_wrapper img{
+  width:20%;
+  margin:15px;
+}
+
 h1{
-  font-family: 'Libre Baskerville', serif;
   color:#2C2627;
   font-family: 'Homemade Apple', cursive;
 }
 
 h2{
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Special Elite', cursive;
   color:#2C2627;
-  font-size:24px;
+  font-size:36px;
 }
 
+img:hover{
+  opacity:0.75;
+}
+
+li{
+  margin:0 0 0 15px;
+}
+
+nav{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  width:50%;
+  max-width:1080px;
+}
+
+
 p{
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Special Elite', cursive;
   color:#2C2627;
-  font-size:18px;
-  line-height:1.5em;
+  font-size:15px;
+  line-height:1.55em;
+  font-kerning:normal;
+}
+
+ul{
+  display:flex;
+  flex-direction:row;
+  list-style: none;
+  align-items:center;
+  justify-content:space-between;
 }
